@@ -1,0 +1,13 @@
+import psutil
+def cpu_check () :
+    cpu_thershold =int(input("enter the thershold : "))
+    current_cpu = psutil.cpu_percent(interval=1)
+    print("current__cpu",current_cpu)
+    if current_cpu >= cpu_thershold :
+        print ("its serious mailing the admain")
+    else :
+        print ("safe to go ")
+
+
+
+cpu_check () 
