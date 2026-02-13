@@ -1,0 +1,107 @@
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python3 -m venv env
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.12-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /home/jana/Desktop/python_for_devops/env/bin/python3
+
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ ^C
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$   apt install python3.12-venv
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ sudo apt install the python3.12-env
+[sudo] password for jana: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package python3.12-env
+E: Couldn't find any package by glob 'python3.12-env'
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ sudo apt install the python3.12-venv
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libregina3 python3-pip-whl python3-setuptools-whl
+Suggested packages:
+  the-doc
+The following NEW packages will be installed:
+  libregina3 python3-pip-whl python3-setuptools-whl python3.12-venv the
+0 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
+Need to get 3,138 kB of archives.
+After this operation, 4,764 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu noble/universe amd64 libregina3 amd64 3.9.5+dfsg1-0.1 [305 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.3 [1,707 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.11 [5,680 B]
+Get:5 http://in.archive.ubuntu.com/ubuntu noble/universe amd64 the amd64 3.3~rc1-3.2 [405 kB]
+Fetched 3,138 kB in 5s (586 kB/s)
+Selecting previously unselected package libregina3:amd64.
+(Reading database ... 155525 files and directories currently installed.)
+Preparing to unpack .../libregina3_3.9.5+dfsg1-0.1_amd64.deb ...
+Unpacking libregina3:amd64 (3.9.5+dfsg1-0.1) ...
+Selecting previously unselected package python3-pip-whl.
+Preparing to unpack .../python3-pip-whl_24.0+dfsg-1ubuntu1.3_all.deb ...
+Unpacking python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...
+Unpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Selecting previously unselected package python3.12-venv.
+Preparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.11_amd64.deb ...
+Unpacking python3.12-venv (3.12.3-1ubuntu0.11) ...
+Selecting previously unselected package the.
+Preparing to unpack .../the_3.3~rc1-3.2_amd64.deb ...
+Unpacking the (3.3~rc1-3.2) ...
+Setting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...
+Setting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...
+Setting up libregina3:amd64 (3.9.5+dfsg1-0.1) ...
+Setting up python3.12-venv (3.12.3-1ubuntu0.11) ...
+Setting up the (3.3~rc1-3.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ ls
+env  python.py
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ env/bin/activate
+bash: env/bin/activate: No such file or directory
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ env /bin/activate
+env: ‘/bin/activate’: No such file or directory
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ env/bin/activate
+bash: env/bin/activate: No such file or directory
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ rm -r env
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ ls
+python.py
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python3.12 -m venv env
+jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ source env/bin/activate
+(env) jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python
+Python 3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Ctrl click to launch VS Code Native REPL
+>>> exit()
+(env) jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ pip install psutil
+Collecting psutil
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.6/155.6 kB 2.8 MB/s eta 0:00:00
+Installing collected packages: psutil
+Successfully installed psutil-7.2.2
+(env) jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python
+Python 3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Ctrl click to launch VS Code Native REPL
+>>> exit()
+(env) jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python python.py
+enter the thershold : 70
+current__cpu 3.7
+safe to go 
+(env) jana@jana-Nitro-AN515-58:~/Desktop/python_for_devops$ python env.py
+enter the thershold : 1 
+current__cpu 5.1
+its serious mailing the admain
