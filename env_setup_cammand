@@ -1,0 +1,16 @@
+python3 -m venv env
+   28  sudo apt install the python3.12-env
+   29  sudo apt install the python3.12-venv
+   30  ls
+   31  env/bin/activate
+   32  env /bin/activate
+   33  env/bin/activate
+   34  rm -r env
+   35  ls
+   36  python3.12 -m venv env
+   37  source env/bin/activate
+   38  python
+   39  pip install psutil
+   40  python
+   41  python python.py
+   42  python env.py
